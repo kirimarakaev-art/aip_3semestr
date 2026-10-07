@@ -1,0 +1,202 @@
+/* =========================================================
+   РЕШЕНИЕ ЗАДАНИЙ ПО СЕЛЕКТОРАМ (CODE.MU: 49-92)
+   ========================================================= */
+
+/* --- 1. Универсальный селектор (*) --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #2c3e50;
+}
+
+.block {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 5px;
+    color: #1a202c;
+}
+
+/* --- 2. Селекторы потомков (пробел) и дочерние селекторы (>) --- */
+/* Все p внутри .parent-box */
+.parent-box p {
+    color: #4a5568;
+}
+
+/* Только прямые дети p класса .parent-box */
+.parent-box > p {
+    font-weight: bold;
+    color: #2b6cb0;
+}
+
+/* --- 3. Классы, Div, Span и комбинации --- */
+.text-info {
+    background-color: #ebf8ff;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+/* Селектор тег + класс (применяется только к p с этим классом) */
+p.text-info {
+    border-left: 4px solid #3182ce;
+}
+
+/* Тег span с классом */
+span.badge {
+    background-color: #e53e3e;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.85em;
+}
+
+/* Элемент с несколькими классами слитно (.class1.class2) */
+.badge.custom-border {
+    border: 2px solid #9b2c2c;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* --- 4. Сложные комбинации потомков и классов --- */
+.wrapper .menu .item.active a {
+    color: #d69e2e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* --- 5. Селекторы по ID (#id) и правила специфичности --- */
+#main-card {
+    background-color: #2d3748;
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+/* Демонстрация приоритета: ID (1-0-0) перебивает класс (0-1-0) */
+.text-highlight {
+    color: #e53e3e;
+}
+#priority-text {
+    color: #805ad5; /* Применится этот цвет */
+    font-weight: bold;
+}
+
+/* --- 6. Соседние (+) и родственные (~) селекторы --- */
+/* Первый p непосредственно после .anchor-heading */
+.anchor-heading + p {
+    color: #dd6b20;
+    font-weight: bold;
+}
+
+/* Все последующие p на том же уровне вложенности после .anchor-heading */
+.anchor-heading ~ p {
+    font-style: italic;
+}
+
+/* --- 7. Селекторы атрибутов --- */
+/* Точное совпадение атрибута */
+a[target="_blank"] {
+    font-weight: bold;
+}
+
+/* Значение атрибута заканчивается на ".pdf" ($=) */
+a[href$=".pdf"] {
+    color: #c53030;
+}
+
+/* Значение атрибута начинается с "https" (^=) */
+a[href^="https"] {
+    text-decoration: underline;
+}
+
+/* Фильтрация input по типу */
+input[type="text"], 
+input[type="password"] {
+    padding: 6px 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+/* --- 8. Состояния ссылок (Псевдоклассы :link, :visited, :hover, :active) --- */
+a.demo-link:link {
+    color: #319795;
+    text-decoration: none;
+}
+a.demo-link:visited {
+    color: #6b46c1;
+}
+a.demo-link:hover {
+    color: #d69e2e;
+    text-decoration: underline;
+}
+a.demo-link:active {
+    color: #e53e3e;
+}
+
+/* --- 9. Псевдоклассы выбора по позиции --- */
+.positions-list li:first-child {
+    color: #38a169;
+    font-weight: bold;
+}
+
+.positions-list li:last-child {
+    color: #e53e3e;
+}
+
+.positions-list li:nth-child(even) {
+    background-color: #edf2f7;
+}
+
+.positions-list li:nth-child(3) {
+    border-left: 3px solid #3182ce;
+    padding-left: 5px;
+}
+
+/* --- 10. Выборка по типу (:first-of-type) --- */
+.type-container p:first-of-type {
+    color: #d69e2e;
+    font-weight: bold;
+}
+
+/* --- 11. Единственный потомок (:only-child) --- */
+.single-parent p:only-child {
+    background-color: #feebc8;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* --- 12. Пустые элементы (:empty) --- */
+.blank-box:empty {
+    width: 100%;
+    height: 35px;
+    background-color: #fed7d7;
+    border: 2px dashed #e53e3e;
+    margin: 10px 0;
+}
+
+/* --- 13. Отрицание (:not) --- */
+.not-container p:not(.ignored) {
+    color: #2b6cb0;
+    background-color: #ebf8ff;
+    padding: 4px 8px;
+    margin-top: 4px;
+    border-radius: 3px;
+}

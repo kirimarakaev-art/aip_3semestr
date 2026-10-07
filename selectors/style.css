@@ -1,0 +1,190 @@
+h1, h2, h3 {
+	text-align: center;
+}
+
+
+
+/* h1, h2, h3{
+    text-align: center;
+}
+
+h2 {
+    color: blue;
+}
+
+h2 {
+    font-size: 16px;
+	color: red;
+} */
+
+/* h1, h2 ,h3 {
+	text-align: center;
+	color: red;
+}
+
+h3 {
+	font-size: 16px;
+} */
+
+/* ul i {
+    color:red;
+}
+
+p i {
+    color:green;
+}
+
+
+p b i {
+    color: red;
+} */
+
+
+/* li > b {
+    color: red;
+}
+
+
+.eve {
+	color: green;
+}
+.odd {
+	color: red;
+}
+
+
+
+.eee {
+	color: red;
+} */
+
+
+
+/* .xxx {
+	font-size: 30px;
+}
+
+.block1 {
+	color: red;
+}
+.block2 {
+	color: green;
+}
+
+.block3 {
+	color: blue;
+}
+
+
+
+
+.eee, .zzz {
+	line-height: 1.5;
+	font-family: Arial;
+}
+
+.eee {
+	font-size: 20px;
+
+}
+.zzz {
+	font-size: 30px;
+}
+
+
+.eee, .zzz, .ggg {
+	text-align: center;
+	font-family: Arial;
+}
+
+.eee {
+	font-size: 20px;
+}
+.zzz {
+	font-size: 30px;
+}
+.ggg {
+	font-size: 35px;
+}
+
+ */
+
+
+ /* .header {
+	color: red;
+}
+
+h2.header {
+	font-size:40px;
+}
+
+h3.header {
+	font-size:30px;
+}
+
+
+.eee i {
+	color: red;
+} */
+
+
+/* .success {
+	color: green;
+}
+.error {
+	color: red;
+}
+.large {
+	font-size: 30px;
+}
+.small {
+	font-size: 20px;
+}
+
+
+.blue {
+    color:blue;
+}
+
+.center{
+    text-align: center;
+}
+
+.big{
+    font-size: 50px;
+}
+
+
+
+
+#elem1 {
+	color: red;
+}
+
+#elem1 {
+	color: green;
+}
+
+#elem1 {
+	color: blue;
+}
+ */
+
+/* #block {
+	color: red;
+	font-family: Arial;
+}
+.text {
+	font-size: 30px;
+} */
+
+
+
+/* #elem + li {
+  color: red;
+}
+
+.elem + li {
+  color: red;
+} */
+

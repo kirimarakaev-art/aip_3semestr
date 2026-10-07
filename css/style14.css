@@ -1,0 +1,9 @@
+p {
+    font: 13px/20px "Times New Roman";
+}
+
+p {
+	width: 300px;
+	font-size: 40px;
+    font: bold Arial red Arial;
+}
